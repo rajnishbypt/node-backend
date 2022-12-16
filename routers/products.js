@@ -30,7 +30,7 @@ router.get(`/:id`, async (req, res) => {
   }
   res.status(200).send(product);
 });
-
+ 
 // post product
 router.post(`/`, async (req, res) => {
   const category=  await Category.findById(req.body.category);
